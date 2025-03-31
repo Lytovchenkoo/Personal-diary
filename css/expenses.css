@@ -1,0 +1,306 @@
+.overview {
+  background-color: var(--background-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.overview__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.overview__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.overview__subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.currency-selector label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.currency-selector__dropdown {
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background-color: var(--background-color);
+}
+
+.overview__stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.overview__stat {
+  flex: 1;
+  padding: 15px;
+  border-radius: var(--radius);
+  background-color: var(--background-secondary);
+}
+
+.overview__stat-title {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+}
+
+.overview__stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.overview__stat-value--balance {
+  color: var(--primary-color);
+}
+
+.overview__stat-value--income {
+  color: var(--success-color);
+}
+
+.overview__stat-value--expense {
+  color: var(--danger-color);
+}
+
+/* Categories */
+.categories {
+  background-color: var(--background-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.categories__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.categories__subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.categories__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category-bar__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.category-bar__name {
+  font-weight: 500;
+}
+
+.category-bar__amount {
+  font-weight: 500;
+}
+
+.category-bar__progress {
+  height: 8px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.category-bar__fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.category-bar__fill--food {
+  background-color: #000;
+  width: 15%;
+}
+
+.category-bar__fill--transport {
+  background-color: #000;
+  width: 20%;
+}
+
+.category-bar__fill--shopping {
+  background-color: #000;
+  width: 65%;
+}
+
+/* Transactions */
+.transactions {
+  background-color: var(--background-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.transactions__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.transactions__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.transactions__subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.transactions__add-btn {
+  padding: 10px 15px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.transactions__filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transactions__filter {
+  flex: 1;
+  padding: 10px 15px;
+  background-color: var(--background-secondary);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.transactions__filter--active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.transactions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: var(--radius);
+  background-color: var(--background-secondary);
+  position: relative;
+}
+
+.transaction-item__left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.transaction-item__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.transaction-item__icon--expense {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger-color);
+}
+
+.transaction-item__icon--income {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success-color);
+}
+
+.transaction-item__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-item__category {
+  font-weight: 500;
+}
+
+.transaction-item__description {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.transaction-item__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.transaction-item__amount {
+  font-weight: 600;
+}
+
+.transaction-item__amount--expense {
+  color: var(--danger-color);
+}
+
+.transaction-item__amount--income {
+  color: var(--success-color);
+}
+
+.transaction-item__date {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.transaction-item__delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 16px;
+}

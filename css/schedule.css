@@ -1,0 +1,174 @@
+/* Schedule CSS */
+.calendar {
+  background-color: var(--background-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.calendar__controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.calendar__control {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--background-secondary);
+}
+
+.calendar__month {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.calendar__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar__day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar__day--other-month {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.calendar__day--today {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.calendar__day--selected {
+  background-color: var(--background-secondary);
+  font-weight: 500;
+}
+
+.calendar__day--has-events::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.events {
+  background-color: var(--background-color);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.events__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.events__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: var(--radius);
+  background-color: var(--background-secondary);
+}
+
+.event-item__time {
+  width: 60px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.event-item__title {
+  flex: 1;
+}
+
+.event-item__delete {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.events__form {
+  display: flex;
+  gap: 10px;
+}
+
+.events__input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 14px;
+}
+
+.events__time {
+  width: 100px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 14px;
+}
+
+.events__add-btn {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
