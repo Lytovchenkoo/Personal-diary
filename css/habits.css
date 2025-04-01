@@ -386,9 +386,12 @@
 
 .habit-tracker__table--month .habit-tracker__table-header,
 .habit-tracker__table--month .habit-item {
-  min-width: max-content;
   padding-right: 30px;
   grid-template-columns: minmax(150px, 2fr) 0.5fr repeat(auto-fit, 1fr); /* Use auto-fit for month view */
+}
+
+.habit-tracker__table--month .habit-tracker__table-header {
+  min-width: max-content;
 }
 
 .habit-tracker__table--month .habit-item__delete {
