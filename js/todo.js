@@ -338,7 +338,7 @@ export class TodoManager {
 
   formatDate(dateStr) {
     const date = new Date(dateStr);
-    return date.toLocaleDateString("en-US", {
+    return date.toLocaleDateString("en-UK", {
       year: "numeric",
       month: "2-digit",
       day: "2-digit",

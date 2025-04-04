@@ -78,7 +78,6 @@
   color: var(--danger-color);
 }
 
-/* Categories */
 .categories {
   background-color: var(--background-color);
   border-radius: var(--radius);
@@ -138,21 +137,20 @@
 }
 
 .category-bar__fill--food {
-  background-color: #000;
+  background-color: var(--black-color);
   width: 15%;
 }
 
 .category-bar__fill--transport {
-  background-color: #000;
+  background-color: var(--black-color);
   width: 20%;
 }
 
 .category-bar__fill--shopping {
-  background-color: #000;
+  background-color: var(--black-color);
   width: 65%;
 }
 
-/* Transactions */
 .transactions {
   background-color: var(--background-color);
   border-radius: var(--radius);
@@ -180,8 +178,8 @@
 
 .transactions__add-btn {
   padding: 10px 15px;
-  background-color: #000;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border: none;
   border-radius: var(--radius);
   font-size: 14px;
@@ -212,7 +210,7 @@
 
 .transactions__filter--active {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white-color);
 }
 
 .transactions__list {

@@ -425,7 +425,7 @@ export class ExpenseManager {
 
   formatDate(dateStr) {
     const date = new Date(dateStr);
-    return date.toLocaleDateString("en-US", {
+    return date.toLocaleDateString("en-UA", {
       year: "numeric",
       month: "2-digit",
       day: "2-digit",

@@ -1,4 +1,3 @@
-/* To-Do CSS */
 .tasks {
   background-color: var(--background-color);
   border-radius: var(--radius);
@@ -35,8 +34,8 @@
 
 .tasks__add-btn {
   padding: 12px 20px;
-  background-color: #000;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border: none;
   border-radius: var(--radius);
   font-size: 14px;
@@ -67,7 +66,7 @@
 
 .tasks__filter--active {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white-color);
 }
 
 .tasks__list {
@@ -130,7 +129,7 @@
   border-radius: 12px;
   font-size: 12px;
   font-weight: 500;
-  color: white;
+  color: var(--white-color);
 }
 
 .task-item__priority--high {
@@ -158,7 +157,6 @@
   font-size: 16px;
 }
 
-/* Task Calendar */
 .task-calendar {
   background-color: var(--background-color);
   border-radius: var(--radius);
@@ -240,7 +238,7 @@
 
 .task-calendar__day--today {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white-color);
 }
 
 .task-calendar__day--selected {
@@ -257,7 +255,6 @@
   border-radius: 50%;
 }
 
-/* Day Tasks */
 .day-tasks {
   background-color: var(--background-color);
   border-radius: var(--radius);
@@ -295,8 +292,8 @@
 
 .day-tasks__add-btn {
   padding: 12px 20px;
-  background-color: #000;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border: none;
   border-radius: var(--radius);
   font-size: 14px;
@@ -307,7 +304,6 @@
   gap: 5px;
 }
 
-/* Task Categories */
 .task-categories {
   background-color: var(--background-color);
   border-radius: var(--radius);

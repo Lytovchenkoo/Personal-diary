@@ -426,7 +426,7 @@ export class CalendarManager {
       month: "long",
       day: "numeric",
     };
-    return date.toLocaleDateString("en-US", options);
+    return date.toLocaleDateString("en-UA", options);
   }
 }
 
