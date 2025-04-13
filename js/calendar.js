@@ -26,7 +26,7 @@ export class CalendarManager {
         id: 1,
         title: "Complete project proposal",
         category: "work",
-        dueDate: "2023-10-20",
+        dueDate: "2025-03-20",
         priority: "high",
         completed: false,
       },
@@ -34,7 +34,7 @@ export class CalendarManager {
         id: 2,
         title: "Buy groceries",
         category: "personal",
-        dueDate: "2023-10-15",
+        dueDate: "2025-03-15",
         priority: "medium",
         completed: true,
       },
@@ -42,7 +42,7 @@ export class CalendarManager {
         id: 3,
         title: "Schedule dentist appointment",
         category: "health",
-        dueDate: "2023-10-25",
+        dueDate: "2025-03-25",
         priority: "low",
         completed: false,
       },
@@ -50,7 +50,7 @@ export class CalendarManager {
         id: 4,
         title: "Prepare presentation",
         category: "work",
-        dueDate: "2023-10-18",
+        dueDate: "2025-03-18",
         priority: "high",
         completed: false,
       },
@@ -143,7 +143,7 @@ export class CalendarManager {
     // Get day of week of first day (0 = Sunday, 6 = Saturday)
     const DayOfWeek = firstDay.getDay();
     const firstDayOfWeek = (DayOfWeek + 6) % 7; // Make Monday = 0, Sunday = 6
-    
+
     // Get days from previous month
     const prevMonthLastDay = new Date(
       this.currentMonth.getFullYear(),

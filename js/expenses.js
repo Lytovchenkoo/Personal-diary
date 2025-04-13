@@ -39,7 +39,7 @@ export class ExpenseManager {
         category: "Food",
         description: "Lunch",
         amount: 25.5,
-        date: "2023-10-15",
+        date: "2025-03-15",
       },
       {
         id: 2,
@@ -47,7 +47,7 @@ export class ExpenseManager {
         category: "Salary",
         description: "Monthly salary",
         amount: 1500.0,
-        date: "2023-10-10",
+        date: "2025-03-10",
       },
       {
         id: 3,
@@ -55,7 +55,7 @@ export class ExpenseManager {
         category: "Transport",
         description: "Uber",
         amount: 35.0,
-        date: "2023-10-12",
+        date: "2025-03-12",
       },
       {
         id: 4,
@@ -63,7 +63,7 @@ export class ExpenseManager {
         category: "Shopping",
         description: "Clothes",
         amount: 120.75,
-        date: "2023-10-14",
+        date: "2025-03-14",
       },
     ];
 

@@ -23,31 +23,30 @@ export class HabitManager {
     const savedCompletions = this.storageManager.getData("habitCompletions");
 
     this.habits = savedHabits || [
-      { id: 1, name: "Morning Meditation", color: "blue", streak: 5 },
-      { id: 2, name: "Read 30 minutes", color: "green", streak: 3 },
-      { id: 3, name: "Exercise", color: "purple", streak: 2 },
-      { id: 4, name: "Drink 8 glasses of water", color: "teal", streak: 7 },
+      { id: 1, name: "Read 30 minutes", color: "green", streak: 3 },
+      { id: 2, name: "Exercise", color: "purple", streak: 2 },
+      { id: 3, name: "Drink 8 glasses of water", color: "teal", streak: 7 },
     ];
 
     this.completions = savedCompletions || {
       // Sample data for the current week
-      "1-2023-10-16": true,
-      "1-2023-10-17": true,
-      "1-2023-10-18": true,
-      "1-2023-10-19": true,
-      "1-2023-10-20": true,
-      "2-2023-10-16": true,
-      "2-2023-10-17": true,
-      "2-2023-10-18": true,
-      "3-2023-10-17": true,
-      "3-2023-10-19": true,
-      "4-2023-10-16": true,
-      "4-2023-10-17": true,
-      "4-2023-10-18": true,
-      "4-2023-10-19": true,
-      "4-2023-10-20": true,
-      "4-2023-10-21": true,
-      "4-2023-10-22": true,
+      "1-2025-03-16": true,
+      "1-2025-03-17": true,
+      "1-2025-03-18": true,
+      "1-2025-03-19": true,
+      "1-2025-03-20": true,
+      "2-2025-03-16": true,
+      "2-2025-03-17": true,
+      "2-2025-03-18": true,
+      "3-2025-03-17": true,
+      "3-2025-03-19": true,
+      "4-2025-03-16": true,
+      "4-2025-03-17": true,
+      "4-2025-03-18": true,
+      "4-2025-03-19": true,
+      "4-2025-03-20": true,
+      "4-2025-03-21": true,
+      "4-2025-03-22": true,
     };
   }
 
