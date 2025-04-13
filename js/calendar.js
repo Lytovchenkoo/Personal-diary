@@ -141,8 +141,9 @@ export class CalendarManager {
     );
 
     // Get day of week of first day (0 = Sunday, 6 = Saturday)
-    const firstDayOfWeek = firstDay.getDay();
-
+    const DayOfWeek = firstDay.getDay();
+    const firstDayOfWeek = (DayOfWeek + 6) % 7; // Make Monday = 0, Sunday = 6
+    
     // Get days from previous month
     const prevMonthLastDay = new Date(
       this.currentMonth.getFullYear(),

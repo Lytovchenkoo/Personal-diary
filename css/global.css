@@ -26,6 +26,12 @@
   --shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
 }
 
+body.dark .habit-tracker__period-dropdown,
+body.dark .currency-selector__dropdown {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
 * {
   margin: 0;
   padding: 0;

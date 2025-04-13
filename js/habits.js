@@ -212,10 +212,10 @@ export class HabitManager {
       const endDate = new Date(this.currentPeriodStart);
       endDate.setDate(endDate.getDate() + 6);
 
-      const startMonth = this.currentPeriodStart.toLocaleString("default", {
+      const startMonth = this.currentPeriodStart.toLocaleString("en-US", {
         month: "long",
       });
-      const endMonth = endDate.toLocaleString("default", { month: "long" });
+      const endMonth = endDate.toLocaleString("en-US", { month: "long" });
 
       if (startMonth === endMonth) {
         currentPeriod.textContent = `${startMonth} ${this.currentPeriodStart.getDate()}-${endDate.getDate()}, ${this.currentPeriodStart.getFullYear()}`;
@@ -223,15 +223,13 @@ export class HabitManager {
         currentPeriod.textContent = `${startMonth} ${this.currentPeriodStart.getDate()} - ${endMonth} ${endDate.getDate()}, ${this.currentPeriodStart.getFullYear()}`;
       }
 
-      // Remove month view class if it exists
       habitTrackerTable.classList.remove("habit-tracker__table--month");
     } else {
-      const monthName = this.currentPeriodStart.toLocaleString("default", {
+      const monthName = this.currentPeriodStart.toLocaleString("en-US", {
         month: "long",
       });
       currentPeriod.textContent = `${monthName} ${this.currentPeriodStart.getFullYear()}`;
 
-      // Add month view class
       habitTrackerTable.classList.add("habit-tracker__table--month");
     }
 
@@ -252,32 +250,26 @@ export class HabitManager {
     habitTableHeader.appendChild(habitCell);
     habitTableHeader.appendChild(streakCell);
 
-    // Add day columns
     const periodDates = this.getPeriodDates();
 
     periodDates.forEach((date) => {
       const dayCell = document.createElement("div");
       dayCell.className = "habit-tracker__header-cell";
 
-      // Format day display
       if (this.periodType === "week") {
-        // Show day of week for week view
-        const dayOfWeek = date.toLocaleString("default", { weekday: "short" });
+        const dayOfWeek = date.toLocaleString("en-US", { weekday: "short" });
         dayCell.textContent = dayOfWeek;
       } else {
-        // Show day of month for month view
         dayCell.textContent = date.getDate();
       }
 
       habitTableHeader.appendChild(dayCell);
     });
 
-    // Update grid template columns based on number of days
     const numDays = periodDates.length;
-    const gridTemplate = `minmax(150px, 2fr) 0.5fr repeat(${numDays}, 1fr)`;
+    const gridTemplate = `minmax(100px, 1fr) 0.5fr repeat(${numDays}, 1fr)`;
     habitTableHeader.style.gridTemplateColumns = gridTemplate;
 
-    // Apply the same grid template to all habit items
     document.querySelectorAll(".habit-item").forEach((item) => {
       item.style.gridTemplateColumns = gridTemplate;
     });
@@ -300,7 +292,7 @@ export class HabitManager {
 
     // Get grid template from header
     const numDays = periodDates.length;
-    const gridTemplate = `minmax(150px, 2fr) 0.5fr repeat(${numDays}, 1fr)`;
+    const gridTemplate = `minmax(100px, 1fr) 0.5fr repeat(${numDays}, 1fr)`;
 
     this.habits.forEach((habit) => {
       const habitElement = document.createElement("div");

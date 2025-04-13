@@ -104,7 +104,6 @@
 
 .habit-item {
   display: grid;
-  grid-template-columns: minmax(150px, 2fr) 0.5fr repeat(7, 1fr);
   gap: 10px;
   align-items: center;
   position: relative;
@@ -115,7 +114,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  min-width: 0;
+  max-width: 80px;
   overflow: hidden;
 }
 
@@ -156,7 +155,6 @@
 }
 
 .habit-item__day {
-  width: 30px;
   min-width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -369,24 +367,9 @@
   overflow-x: auto;
 }
 
-.habit-tracker__table--month .habit-tracker__table-header,
-.habit-tracker__table--month .habit-item {
-  padding-right: 30px;
-  grid-template-columns: minmax(150px, 2fr) 0.5fr repeat(auto-fit, 1fr);
-}
-
-.habit-tracker__table--month .habit-tracker__table-header {
+.habit-tracker__table-header,
+.habit-item {
   min-width: max-content;
-}
-
-.habit-tracker__table--month .habit-item__delete {
-  right: 5px;
-}
-
-.habit-tracker__table--month .habit-item__day {
-  margin: 0 10px;
-}
-
-.habit-tracker__table--month .habit-item__streak {
-  margin: 0 25px;
+  display: grid;
+  gap: 10px;
 }
